@@ -64,6 +64,7 @@ class Command(BaseCommand):
                         print(userr.username,'Has send message')
                     time.sleep(random.randint(5,9))
                 except Exception as e : 
+                    time.sleep(random.randint(5,9))
                     print(userr.username,'could not sent a message')
                     print(e)
                 client.disconnect()
